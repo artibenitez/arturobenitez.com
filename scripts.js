@@ -18,49 +18,38 @@ const images = [
 ];
 
 const randomImage = images[Math.floor(Math.random() * images.length)];
-
 document.getElementById('random-header-img').src = randomImage;
 
-let slideIndex = 0;
+const photos = [
+    "photographs/photo1.jpg",
+    "photographs/photo2.jpg",
+    "photographs/photo3.jpg",
+    "photographs/photo4.jpg",
+    "photographs/photo5.jpg"
+];
 
-// Function to show the current slide
-function showSlide(index) {
-    let slides = document.getElementsByClassName("photos");
+let currentPhotoIndex = 0;
 
-    // Loop through all slides and hide them
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; // Hide all images
-    }
-
-    // Adjust index to loop if it goes beyond the number of slides
-    if (index >= slides.length) {
-        slideIndex = 0; // Reset to first slide
-    } else if (index < 0) {
-        slideIndex = slides.length - 1; // Go to last slide
-    }
-
-    // Display the current slide
-    slides[slideIndex].style.display = "block"; // Show the current image
+// Function to show the current photo
+function showPhoto(index) {
+    const photoElement = document.getElementById('current-photo');
+    photoElement.src = photos[index]; // Update the image source
 }
 
-// Initial call to show the first slide
-showSlide(slideIndex);
-
-// Add click event listener to all images
-document.addEventListener("DOMContentLoaded", function() {
-    let slides = document.getElementsByClassName("photos");
-
-    // Loop through each slide to add a click event listener
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].addEventListener("click", function() {
-            slideIndex++; // Increment the slide index
-            showSlide(slideIndex); // Show the next slide
-        });
+// Function to handle the click event
+document.getElementById('current-photo').addEventListener('click', function() {
+    currentPhotoIndex++; // Move to the next photo
+    if (currentPhotoIndex >= photos.length) {
+        currentPhotoIndex = 0; // Loop back to the first photo
     }
-
-    // Show the first slide initially
-    showSlide(slideIndex);
+    showPhoto(currentPhotoIndex); // Show the new photo
 });
+
+// Initial call to show the first photo
+showPhoto(currentPhotoIndex);
+
+
+
 
 
 
