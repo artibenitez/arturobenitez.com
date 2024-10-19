@@ -1,0 +1,51 @@
+body {
+    font-family: Arab, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align title to the left */
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 10px; /* Add padding for consistent left alignment */
+}
+
+.header {
+    padding:10px;
+    text-align: left; /* Aligns the content to the left */
+}
+
+.header-img {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set a max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.header-name {
+    font-size: 2.5em; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin from h1 */
+    font-weight: 100;
+}
+
+.link {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
+    text-decoration: underline; /* Underline by default */
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 100;
+    transition: text-decoration 0.3s ease;
+}
+
+/* Remove underline on hover */
+.link:hover {
+    text-decoration: none;
+}
+
+/* Remove bottom border for the last link */
+.link:last-child {
+    border-bottom: none;
+}
