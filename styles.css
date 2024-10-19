@@ -25,6 +25,18 @@ body {
     font-size: 2.5em; /* Adjust the font size as needed */
     margin: 0; /* Remove default margin from h1 */
     font-weight: 100;
+    color: black; /* Set the color to match the unvisited state */
+    text-decoration: none;
+}
+
+.header-name a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set color for the link */
+}
+
+.header-name a:visited {
+    color: black; /* Set the color to match the unvisited state */
+    text-decoration: none;
 }
 
 .link {
@@ -53,11 +65,12 @@ body {
 .photo-container {
     max-width: 1000px; /* Set max width for the photo container */
     width: 100%; /* Make the container responsive */
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 .photo {
-    width: 100%; /* Make each photo responsive */
+    width: 100%; /* Make the image responsive */
+    max-width: 500px; /* Set a max width for the image */
     height: auto; /* Maintain aspect ratio */
-    margin: 10px; /* Space between photos */
+    margin-bottom: 20px;
 } 
