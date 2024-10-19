@@ -16,7 +16,7 @@ body {
 
 .header-img {
     width: 100%; /* Make the image responsive */
-    max-width: 400px; /* Set a max width for the image */
+    max-width: 500px; /* Set a max width for the image */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px;
 }
@@ -51,15 +51,12 @@ body {
 }
 
 .photo-container {
-    max-width: 800px;
-    position: relative;
-    cursor: pointer; /* Indicate the photo is clickable */
+    max-width: 1000px; /* Set max width for the photo container */
+    width: 100%; /* Make the container responsive */
 }
 
-.photos {
-    width: 100%; /* Make image responsive */
+.photo {
+    width: 100%; /* Make each photo responsive */
     height: auto; /* Maintain aspect ratio */
-    max-height: 80vh; /* Keep the height responsive */
-    display: block; /* Show one image at a time */
-    transition: opacity 0.5s; /* Smooth transition */
-}
+    margin: 10px; /* Space between photos */
+} 

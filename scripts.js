@@ -19,37 +19,3 @@ const images = [
 
 const randomImage = images[Math.floor(Math.random() * images.length)];
 document.getElementById('random-header-img').src = randomImage;
-
-const photos = [
-    "photographs/photo1.jpg",
-    "photographs/photo2.jpg",
-    "photographs/photo3.jpg",
-    "photographs/photo4.jpg",
-    "photographs/photo5.jpg"
-];
-
-let currentPhotoIndex = 0;
-
-// Function to show the current photo
-function showPhoto(index) {
-    const photoElement = document.getElementById('current-photo');
-    photoElement.src = photos[index]; // Update the image source
-}
-
-// Function to handle the click event
-document.getElementById('current-photo').addEventListener('click', function() {
-    currentPhotoIndex++; // Move to the next photo
-    if (currentPhotoIndex >= photos.length) {
-        currentPhotoIndex = 0; // Loop back to the first photo
-    }
-    showPhoto(currentPhotoIndex); // Show the new photo
-});
-
-// Initial call to show the first photo
-showPhoto(currentPhotoIndex);
-
-
-
-
-
-
