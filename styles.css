@@ -53,6 +53,7 @@ body {
 .photo-container {
     max-width: 1000px; /* Set max width for the photo container */
     width: 100%; /* Make the container responsive */
+    padding-bottom: 10px;
 }
 
 .photo {
