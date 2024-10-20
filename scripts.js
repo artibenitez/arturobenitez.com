@@ -14,7 +14,11 @@ const images = [
     "images/next.jpg",
     "images/shuttle.jpg",
     "images/sr71.jpg",
-    "images/terminator.jpg"
+    "images/terminator.jpg",
+    "images/stacks.jpg",
+    "images/umbrella.jpg",
+    "images/room.jpg",
+    "images/galaxy.jpg"
 ];
 
 const randomImage = images[Math.floor(Math.random() * images.length)];
