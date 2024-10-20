@@ -65,7 +65,7 @@ body {
 }
 
 .photo-container {
-    max-width: 500px; /* Set max width for the photo container */
+    max-width: 1000px; /* Set max width for the photo container */
     width: 100%; /* Make the container responsive */
     padding: 10px;
     margin: 0;
