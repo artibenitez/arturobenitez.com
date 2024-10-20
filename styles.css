@@ -63,15 +63,16 @@ body {
 }
 
 .photo-container {
-    max-width: 1000px; /* Set max width for the photo container */
+    max-width: 500px; /* Set max width for the photo container */
     width: 100%; /* Make the container responsive */
     padding: 10px;
+    margin: 0 auto;
     text-align: left;
+    box-sizing: border-box;
 }
 
 .photo {
     width: 100%; /* Make the image responsive */
-    max-width: 500px; /* Set a max width for the image */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px;
 } 
