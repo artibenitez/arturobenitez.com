@@ -73,4 +73,5 @@ body {
     max-width: 500px; /* Set a max width for the image */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px;
+    align-items: flex-start;
 } 
